@@ -1,0 +1,19 @@
+DESCRIPTION="Open Dynamics Engine library"
+HOMEPAGE="http://www.ode.org/"
+SRC_URI="mirror://sourceforge/opende/${P}.tar.bz2"
+
+PKG_NAMES="ode libode1 libode-devel"
+libode1_CONTENTS="usr/bin/cygode-1.dll usr/share/doc/"
+libode_devel_CONTENTS="usr/bin/ode-config usr/include/ usr/lib/"
+
+# drawstuff X11 code just causes BadMatch (X_CreateWindow)
+# it's just used for the demos though, not part of the API
+CYGCONF_ARGS="
+	--enable-shared
+	--disable-demos
+	--with-drawstuff=none
+	ac_cv_lib_opengl32_main=no ac_cv_lib_glu32_main=no
+"
+#MAKEOPTS+=" X_LIBS=-lX11"
+
+DOCS="LICENSE*.TXT README.txt"

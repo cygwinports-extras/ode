@@ -1,0 +1,9 @@
+category: Libs
+requires: libode1 libstdc++6-devel
+external-source: ode
+sdesc: "Open Dynamics Engine library (development)"
+ldesc: "ODE is a free, industrial quality library for simulating 
+articulated rigid body dynamics - for example ground vehicles, legged 
+creatures, and moving objects in VR environments. It is fast, flexible, 
+robust and platform independent, with advanced joints, contact with 
+friction, and built-in collision detection."

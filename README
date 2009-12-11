@@ -1,0 +1,56 @@
+ode
+------------------------------------------
+ODE is a free, industrial quality library for simulating articulated
+rigid body dynamics - for example ground vehicles, legged creatures,
+and moving objects in VR environments. It is fast, flexible, robust
+and platform independent, with advanced joints, contact with friction,
+and built-in collision detection.
+
+Runtime requirements:
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
+  libstdc++6-4.3.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gcc4-g++-4.3.4-1
+  libtool-2.2.7a-14
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.ode.org/
+
+Canonical download:
+  http://sourceforge.net/projects/opende/files/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ode-0.11.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ode-0.11.1-X.cygport all
+
+This will create:
+  /usr/src/ode-0.11.1-X-src.tar.bz2
+  /usr/src/libode-devel-0.11.1-X.tar.bz2
+  /usr/src/libode1-0.11.1-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.11.1-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
